@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>苏宁小店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/cart.min.css">
+    <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="sn_cart_container">
+    <header class="sn_cart_header">
+        <div class="mui-pull-left sn-nav-left"><a href="javascript:history.back();" class="mui-icon mui-icon-back"></a>
+        </div>
+        <div class="title mui-pull-left">购物车</div>
+        <div class="sn-nav-right mui-pull-left">
+            <a href="" style="display:block;">编辑</a>
+            <img src="images/diandian.png" alt="" class="dian">
+        </div>
+    </header>
+    <div class="content">
+
+    </div>
+
+    <footer class="sn_footer hor-view">
+        <a href="index.html" class="cur">
+            <img src="images/footer1.png" alt="">
+            <span class="index">首页</span>
+        </a>
+        <a href="categorize.html">
+            <img src="images/footer2.png" alt="">
+            <span>分类</span>
+        </a>
+        <a href="javascript:;">
+            <img src="images/footer3.png" alt="">
+            <span>购物车</span>
+        </a>
+        <a href="me.html">
+            <img src="images/footer4.png" alt="">
+            <span>个人中心</span>
+        </a>
+    </footer>
+</div>
+</body>
+<script type="text/html" id="cartTemplate">
+    <div class="cartList">
+        <div class="table">
+            <div class="cartTop ">
+                    <div class="leftLi mui-pull-left mui-checkbox"><input name="checkbox1" value="Item 1" type="checkbox" id="all"></div>
+                    <div class="rightLi mui-pull-left"><img src="images/logo2.jpg" alt=""><span>苏宁小店</span></div>
+            </div>
+            <div class="cartBody">
+                <ul>
+                    <% if(data&&data.length>0){ %>
+                    <% for( var i = 0; i < data.length;i++ ){ %>
+                    <li class="mui-table-view-cell mui-transitioning" data-id="<%=data[i].id%>">
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-red deleteBtn" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <div class="mui-slider-handle">
+                        <div  class="mui-checkbox mui-pull-left leftLi">  <input name="checkbox1" value="Item 1" type="checkbox" data-id="<%=data[i].id%>" checked></div>
+                         <div class="product hor-view mui-pull-left rightLi">
+                            <div class="product_img f_left">
+                                <a href="product.html?productId=<%=data[i].productId%>">
+                                    <img src="<%=data[i].pic[0].picAddr%>" alt="">
+                                </a>
+                            </div>
+                            <div class="product_text f_left">
+                                <div class="tellYou"><%=data[i].productSize%></div>
+                                <div style="margin-top:0.6rem" class="money"><%=data[i].price%></div>
+                            </div>
+                             <div class="add" data-id="<%=data[i].id%>">
+                                 <a href="javascript:;" class="jian btn-size">-</a>
+                                 <a href="javascript:;" class="num"><%=data[i].num%></a>
+                                 <a href="javascript:;" class="jia btn-size">+</a>
+                             </div>
+                        </div>
+                        </div>
+                    </li>
+
+                    <% } %>
+                    <% } %>
+                </ul>
+                <div class="total">
+                    <ul>
+                        <li>总额</li>
+                        <li id="cartAmount">0</li>
+                        <li><span>去  结  算</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery-lazyload/jquery.lazyload.js"></script>
+<script src="lib/lodash.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cart.min.js"></script>
+</html>

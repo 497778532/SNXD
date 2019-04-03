@@ -1,0 +1,130 @@
+.item-btn.item-head {
+    height: 2.8rem;
+}
+body{
+    font-size: .562rem;
+    line-height: 1.5;
+}
+a{
+    color: #333333;
+}
+.item-btn {
+    display: block;
+    width: 100%;
+    height: 1.8rem;
+    background: #fff;
+    padding-left: .5rem;
+}
+.mb-20 {
+    margin-bottom: .4rem;
+}
+
+.item-btn .btn-content {
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: .5rem;
+}
+.item-btn .btn-content, .sn-nav {
+    border-bottom: 1px solid #f2f2f2;
+}
+.item-btn .btn-content img {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 0;
+    border-radius: .9rem;
+    margin-right: .4rem;
+}
+
+.item-btn .btn-content label {
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: .56rem;
+}
+
+.item-tip {
+    color: #999;
+    font-size: .56rem;
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: .5rem;
+}
+
+.item-baby {
+    display: flex;
+    width: 100%;
+    height: 2.8rem;
+    background: #fff;
+}
+.item-baby .baby-add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.item-baby .baby-ico {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background:url("/suning/images/baobao1.png");
+    background-size: contain;
+}
+.item-baby .add-ico {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background:url("/suning/images/baobao2.png");
+    background-size: contain;
+}
+
+.item-btn {
+    display: block;
+    width: 100%;
+    height: 1.8rem;
+    background: #fff;
+    padding-left: .5rem;
+}
+.item-btn .btn-content span {
+    display: block;
+    color: #999;
+    font-size: .6rem;
+}
+.item-baby .baby-add+.baby-add {
+    border-left: 1px solid #f2f2f2;
+}
+
+.out-btn {
+    display: block;
+    width: 13.8rem;
+    height: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    color: #fff;
+    font-size: .6rem;
+    background: #f60;
+    margin: 1.2rem auto .8rem;
+    border-radius: .16rem
+}
+.item-btn .btn-content i {
+    display: block;
+    width: .24rem;
+    height: .44rem;
+    background:url("/suning/images/userRight.png");
+    background-size: contain;
+    margin-left: .4rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>苏宁小店</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" href="css/common.min.css">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/addressUpdate.css">
+  <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!--导航栏-->
+<div class="sn-nav">
+  <div class="sn-nav-back"><a class="" href="javascript:history.back(1)">返回</a></div>
+  <div class="sn-nav-title of">编辑地址</div>
+</div>
+<div class="sn-main js-main">
+  <div class="form-list sn-block form-list-reset wbox">
+    <div class="wbox-flex">
+      <div class="input-block wbox">
+        <p>收货人</p>
+        <div class="wbox-flex ml30">
+          <input id="addr-name" maxlength="12" type="text" autocomplete="off">
+        </div>
+        <em class="delete" style="display:none"></em>
+      </div>
+      <div class="input-block wbox bnone">
+        <p>手机号码</p>
+        <div class="wbox-flex ml30" data-originaltel="133******51">
+          <input id="addr-tel" maxlength="11" type="text" autocomplete="off" value="">
+        </div>
+        <em class="delete" style="display:none"></em>
+      </div>
+    </div>
+  </div>
+  <ul class="form-list sn-block">
+    <li class="input-block wbox">
+      <p>所在地区</p>
+      <div class="wbox-flex ml30">
+        <input id="addr-address" type="text" autocomplete="off" value="">
+
+      </div>
+    </li>
+    <li class="input-block wbox double-li">
+      <p>详细地址</p>
+      <div class="wbox-flex ml30">
+        <textarea name="address" id="addr-detail" maxlength="50"></textarea>
+      </div>
+      <em class="delete" style="display:none"></em>
+    </li>
+    <li class="input-block wbox">
+      <p>邮政编码</p>
+      <div class="wbox-flex ml30">
+        <input id="addr-postCode" maxlength="6" type="text" autocomplete="off" value="">
+      </div>
+      <em class="delete" style="display:none"></em>
+    </li>
+  </ul>
+  <a  href="javascript:void(0)" class="js-btn-double sn-btn sn-btn-positive sn-btn-big sn-btn-block m60">保存并使用</a>
+</div>
+<script type="text/html" id="updateTemplate">
+
+</script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script src="js/addressUpdate.min.js"></script>
+
+</body>
+</html>

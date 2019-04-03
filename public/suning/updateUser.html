@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>苏宁小店</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/updateUser.css">
+  <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="login-container">
+  <!--导航栏-->
+  <div class="sn-nav">
+    <div class="sn-nav-back"><a class="" href="javascript:history.back()">返回</a></div>
+    <div class="sn-nav-title of">手机验证</div>
+  </div>
+  <div class="sn-main js-main">
+    <div class="desc">
+      <p class="vmsy">发送短信验证码至</p>
+      <div id="derc">
+        <span class="desc-text black1" id="black1"></span>
+        <span class="getmobilecode getmscode b org1" id="getcode">获取验证码</span>
+      </div>
+    </div>
+    <div class=" p30 sn-block">
+      <div class="wbox input-block bbc">
+        <input type="text" autocomplete="off" id="code" class="wbox-flex" name="code" placeholder="请输入短信验证码" maxlength="6">
+        <em class="delete" style="display:none"></em>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="js-btn sn-btn sn-btn-dark sn-btn-big sn-btn-block m30 mt60">确定</a>
+  </div>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/updateUser.js">
+</script>
+</body>
+</html>

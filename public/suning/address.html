@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>苏宁小店</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" href="css/common.min.css">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/address.min.css">
+  <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!--导航栏-->
+<div class="sn-nav">
+  <div class="sn-nav-back"><a class="" href="javascript:history.back(1)">返回</a></div>
+  <div class="sn-nav-title of">收货地址管理</div>
+</div>
+<div class="sn-main js-main">
+  <ul class="address-list">
+
+  </ul>
+</div>
+<script type="text/html" id="addressTemplate">
+  <% for( var i = 0 ;i < list.length ; i++ ){ %>
+  <li>
+    <a href="addressUpdate.html?addressId=<%=list[i].id%>">
+      <span class="ad-name"><%=list[i].recipients%></span>
+      <span class="ad-tel"><%=list[i].mobile%></span>
+      <p class="address-all">
+        <span class="<%=i==0?'ad-default':''%>">[默认]</span>
+        <%=list[i].address%><%=list[i].addressDetail%>
+      </p>
+      <div class="arrow-right" data-postcode=""></div>
+    </a>
+  </li>
+  <% } %>
+</script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script src="js/address.min.js"></script>
+</body>
+</html>

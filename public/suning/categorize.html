@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>苏宁小店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/categorize.min.css">
+    <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+</head>
+<body style="overflow-y:hidden " >
+<div class="sn_container mui-clearfix">
+    <div class="search">
+        <span class="mui-icon mui-icon-search"></span>
+        <input type="text" placeholder="搜素附近的商品和门店">
+    </div>
+    <div class="content">
+        <div class="left mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="right mui-scroll-wrapper">
+            <div class="mui-scroll">
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer class="sn_footer hor-view">
+    <a href="index.html" class="cur">
+        <img src="images/footer1.png" alt="">
+        <span class="index">首页</span>
+    </a>
+    <a href="categorize.html">
+        <img src="images/footer2.png" alt="">
+        <span>分类</span>
+    </a>
+    <a href="cart.html">
+        <img src="images/footer3.png" alt="" class="imgBox">
+        <span>购物车</span>
+    </a>
+    <a href="me.html">
+        <img src="images/footer4.png" alt="">
+        <span>个人中心</span>
+    </a>
+</footer>
+<script type="text/html" id="firstTemplate">
+
+    <% for( var i =0 ; i < rows.length ;i++ ){ %>
+    <li data-id="<%=rows[i].id %>">
+        <a href="javascript:;" class="<%=i==0?'now':'' %>"><%=rows[i].categoryName %></a>
+    </li>
+    <% } %>
+
+</script>
+<script type="text/html" id="secondTemplate">
+    <% if( rows.length){ %>
+    <% if( rows[0].banner){ %>
+    <div class="cate-banner">
+        <a href="">
+            <img src="<%=rows[0].banner%>" alt="">
+        </a>
+        <input type="text" readonly="readonly" placeholder="时令水果">
+    </div>
+    <% } %>
+    <% for( var i = 0 ; i < rows.length ; i ++){ %>
+    <div class="product hor-view ">
+        <div class="product_img f_left">
+            <a href="product.html?productId=<%=rows[i].id%>">
+                <img data-original="<%=rows[i].brandLogo%>" alt="">
+            </a>
+        </div>
+        <div class="product_text f_left">
+            <p class="proName"><%=rows[i].brandName %></p>
+            <p style="margin-top:0.6rem" class="money"><%=rows[i].price %></p>
+        </div>
+        <div class="add " productId="<%=rows[i].id%>">
+            <a style="visibility: hidden" href="javascript:;" class="jian btn-size">-</a>
+            <a style="visibility: hidden" href="javascript:;" class="num">0</a>
+            <a href="javascript:;" class="mui-icon mui-icon-plusempty jia btn-size"></a>
+            <p style="visibility: hidden" class="button">加入购物车</p>
+        </div>
+    </div>
+    <% } %>
+    <% } %>
+</script>
+<script src="lib/jquery.min.js"> </script>
+<script src="lib/jquery-lazyload/jquery.lazyload.js"> </script>
+<script src="lib/jquery.fly.min.js"> </script>
+<script src="lib/lodash.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script src="js/common.js"></script>
+<script src="./js/categorize.min.js"></script>
+</body>
+</html>

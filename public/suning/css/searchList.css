@@ -1,0 +1,252 @@
+html,body{
+    height: 100%
+}
+.sn_container{
+    padding-bottom: 4rem;
+}
+.search {
+    padding-left:.8rem;
+    height: 2rem;
+    width: 15rem;
+    text-align: left;
+    position: relative;
+    line-height: 1.7rem;
+    border-bottom: 1px #fff solid
+}
+
+.search input[type=search] {
+    width: 14rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+    font-size: 0.24rem;
+    padding-left: 1.4rem;
+    background-color: #fff;
+    text-align:left;
+}
+
+.search span {
+    position: absolute;
+    left: 1.1rem;
+    top: 0.65rem;
+    font-size: .75rem
+}
+.search .cancel{
+    font-size: 0.24rem;
+    display: inline-block;
+    height: 1.1rem;
+    margin-left: .65rem;
+}
+
+.result-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.result-sort-new {
+    width: 100%;
+    height: 1.76rem;
+    background: #fff;
+    overflow: hidden;
+}
+.result-sort-new.sn-nav-search {
+    position: static;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.result-sort-new li {
+    position: relative;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+    font-size: .56rem;
+    color: #333;
+}
+.result-sort-new li.cur{
+    color:#F60;
+}
+.wbox-flex {
+    -webkit-flex: 1!important;
+    -webkit-box-flex: 1;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.wbox{
+    display: -webkit-flex;!important;
+}
+
+.result-sort-new li i {
+    position: absolute;
+    right: .88rem;
+    top: .52rem;
+    display: block;
+    width: 10px;
+    height: 18px;
+    background: url("/suning/images/icon.png") 0 3px no-repeat;;
+    background-size: 60px;
+}
+.result-sort-new li i.top{
+    background-position: -25px 3px;
+}
+.result-sort-new li i.down{
+    background-position: -36px 3px;
+}
+.result-hot-pro {
+    padding-bottom: .4rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.result-hot-pro ul {
+    overflow: hidden;
+    background-color: #fff;
+}
+.result-hot-pro ul li {
+    float: left;
+    padding: .4rem;
+    width: 15rem;
+    background: #FFF;
+    overflow: hidden;
+    margin-bottom: 1px;
+    position: relative;
+}
+.result-hot-pro ul li .img {
+    position: relative;
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 .4rem 0 0;
+}
+
+.result-hot-pro ul li .img .img-occupied {
+    width: 4rem;
+    height: 4rem;
+    background: url(/suning/images/ljz.png) center center no-repeat;
+    background-size: 90%;
+}
+.result-hot-pro ul li .img .img-occupied img {
+    width: 4rem;
+    height: 4rem;
+}
+.result-hot-pro ul li .img .position-right-bottom {
+    position: absolute;
+    left: 0;
+    bottom: -.8rem;
+    width: 100%;
+    height: 1.36rem;
+}
+
+.result-hot-pro ul li .txt {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.result-hot-pro ul li .txt .name {
+    display: -webkit-box;
+    overflow: hidden;
+    height: 1.4rem;
+    margin: -.04rem 0 .22rem;
+    color: #333;
+    text-overflow: ellipsis;
+    font-size: .52rem;
+    line-height: .72rem;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.result-hot-pro ul li .info-label {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: .6rem;
+    font-size: .48rem;
+    line-height: .48rem;
+    margin: -.148rem 0 .4rem;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.result-hot-pro ul li .info-label .i-text {
+    float: left;
+    height: .56rem;
+    margin: .02rem 0 .02rem 0;
+    padding: 0 .06rem 0 .12rem;
+    color: #999;
+    font-size: .48rem;
+    line-height: .58rem;
+}
+.result-hot-pro ul li .info-label .i-text:last-child::before{
+    content: '|';
+    display: inline-block;
+    margin-right: .12rem;
+    height: .56rem;
+    font-size: .48rem;
+    line-height: .58rem;
+}
+.result-hot-pro ul li .txt .price {
+    position: relative;
+    padding-bottom: .4rem;
+    padding-top: .08rem;
+    overflow: hidden;
+    min-height: 3.2rem;
+}
+.result-hot-pro ul li .txt .price .price-box {
+    height: .84rem;
+    overflow: hidden;
+}
+.result-hot-pro ul li .txt .price .price-txt {
+    font-size: .48rem;
+    line-height: .84rem;
+    color: #F60;
+    overflow: hidden;
+    height: .84rem;
+    display: block;
+}
+.result-hot-pro ul li .txt .price .price-txt .price-num {
+    vertical-align: baseline;
+    float: left;
+    margin-right: 8px;
+}
+.result-hot-pro ul li .txt .price .price-txt strong {
+    font-size: .68rem;
+    font-weight: normal;
+}
+.result-hot-pro ul li .txt .product-label {
+    height: .48rem;
+    padding-bottom: .32rem;
+    margin: .08rem 0 0 0;
+    overflow: hidden;
+}
+.result-hot-pro ul li .txt .product-label i {
+    line-height: .52rem;
+    height: .48rem;
+    color: #FFF;
+    font-size: .36rem;
+    overflow: hidden;
+    border-radius: 2px;float: left;
+    display: inline-block;
+    margin: 0 .08rem 0 0;
+    padding: 0 .08rem;
+    background: #f60!important;
+}
+.result-hot-pro ul li .txt .price .shop-num {
+    display: block;
+    height: .7rem;
+    line-height: .6rem;
+    margin: .34rem 0 0 0;
+    overflow: hidden;
+}
+.result-hot-pro ul li .txt .price .shop-num5tgb   em {
+    color: #999;
+    margin: 0 .48rem 0 0;
+    font-weight: normal;
+}
+.mui-scroll-wrapper{
+    top:1.76rem
+}

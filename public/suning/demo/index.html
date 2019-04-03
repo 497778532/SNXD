@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    img{
+      width: 500px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img src="../images/brand1.jpg"  alt="">
+<img  class="lazy" data-original="../images/brand2.jpg"  alt="">
+<img  class="lazy" data-original="../images/brand3.jpg"  alt="">
+<img  class="lazy" data-original="../images/brand4.jpg"  alt="">
+<img  class="lazy" data-original="../images/brand5.jpg"  alt="">
+<img  class="lazy" data-original="../images/brand6.jpg"  alt="">
+
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/jquery-lazyload/jquery.lazyload.js"></script>
+<script>
+    $(function() {
+        $("img.lazy").lazyload();
+    });
+</script>
+</body>
+</html>

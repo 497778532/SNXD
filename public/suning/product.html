@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>苏宁小店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=yes"/>
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/product.min.css">
+    <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="sn_container">
+    <header class="sn_header">
+        <div class="sn-nav-product">
+            <div class="go-back">
+                <a href="javascript:history.go(-1);"></a>
+            </div>
+            <div class="main">
+                (绿叶) 椰青个
+            </div>
+            <div class="share"></div>
+        </div>
+    </header>
+    <div class="myMain">
+
+    </div>
+    <footer class="sn_footer-product hor-view">
+        <a href="cart.html" class="cur">
+            <img src="images/cart.png" alt="">
+        </a>
+        <a href="javascript:;" class="cart">
+            <div>加入购物车</div>
+        </a>
+    </footer>
+</div>
+<script type="text/html" id="bannerTemplate">
+    <div class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <% if(!pic || pic.length == 0) {
+            pic = [{'picAddr':'/m/images/none.png'}];
+            } %>
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="javascript:;"><img src="<%=pic[pic.length-1].picAddr%>" /></a>
+            </div>
+            <% for(var i = 0 ; i < pic.length ; i ++ ){ %>
+            <div class="mui-slider-item <%=i==0?'mui-active':''%>">
+                <a href="javascript:;"><img src="<%=pic[i].picAddr%>" /></a>
+            </div>
+            <% } %>
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="javascript:;"><img src="<%=pic[0].picAddr%>" /></a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <% for(var i = 0 ; i < pic.length ; i ++ ){ %>
+            <div class="mui-indicator <%=i==0?'mui-active':''%>"></div>
+            <% } %>
+        </div>
+    </div>
+    <section class="product-main">
+        <div>
+            <ul>
+                <li class="oldPrice">¥<%=oldPrice%></li>
+                <li class="newPrice">¥<%=price%> <span class="icon">会员价</span></li>
+                <li class="super">小店SUPER会员购买商品立省¥<%=(oldPrice*1000-price*1000)/1000%>元</li>
+                <li class="bigText"><%=proName%></li>
+                <li class="smallText"><%=proDesc%></li>
+            </ul>
+        </div>
+        <div class="big-blank"></div>
+        <div class="logo mui-clearfix">
+            <img src="/suning/images/snlogo.png" alt="">
+            <a href="tel:95519">联系商家</a>
+        </div>
+        <div class="guessUlike">
+            <div class="look">
+                <div class="line">
+                    <hr>
+                </div>
+                <span>看 了 又 看</span>
+                <div class="line">
+                    <hr>
+                </div>
+
+            </div>
+            <div class="pro-list-wrapper">
+                <div class="pro-list">
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-1.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-2.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                    <div class="hor-view">
+                        <a href="">
+                            <img data-original="images/like-3.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                        <a href="">
+                            <img data-original="images/like-4.jpg" alt="">
+                            <div class="pro-title line-clamp-2">
+                                <i class="zy"></i>
+                                蓝漂(Lampure) 抽纸 3层100抽18包竹浆本色抽纸（整箱售卖
+                                ）
+                            </div>
+                            <p class="proInfor">
+                                <span>抢</span>
+                            </p>
+                            <span class="e-price">
+                           ￥30
+                       </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</script>
+<script src="lib/jquery.min.js"> </script>
+<script src="lib/jquery-lazyload/jquery.lazyload.js"> </script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script src="js/product.min.js"></script>
+</body>
+</html>

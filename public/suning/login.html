@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>苏宁小店</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/login.min.css">
+    <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="login-container" sap-modid="3MEc">
+    <!--导航栏-->
+    <div id="wapSnNavId" class="sn-nav">
+        <div class="sn-nav-back"><a class="" href="index.html">返回</a></div>
+        <div class="sn-nav-title of">登录</div>
+    </div>
+
+    <!--登录Tab-->
+    <ul class="login-title">
+        <li class="active" data-login="login-phoneNum" name="WAP_login_password_meslog"><a href="javascript:void(0)">账号密码登录</a>
+        </li>
+    </ul>
+    <div class="login-main">
+        <div class="login-form login-account"
+             style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+            <div class="form-content">
+                <span>账&nbsp;&nbsp;&nbsp;&nbsp;号</span>
+                <div class="form-input">
+                    <input type="text" id="username" name="username" maxlength="64" value="" autocomplete="off"
+                           placeholder="手机号/邮箱/用户名">
+                </div>
+                <a href="javascript:void(0)" class="deleteIco"></a>
+                <div class="form-ico ico-down" style="display:none;"></div>
+            </div>
+
+            <div class="form-content">
+                <span>密&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+                <div class="form-input">
+                    <input type="password" id="password" name="password" maxlength="20" autocomplete="off"
+                           placeholder="请输入6-20位易购密码">
+                </div>
+                <a href="javascript:void(0)" class="deleteIco"></a>
+                <div class="form-ico ico-eye-close" name="WAP_login_password_lookpsd"></div>
+            </div>
+        </div>
+    </div>
+    <div class="login-operate">
+        <a href="javascript:;" class="login-btn active-login-btn"
+           name="WAP_login_password_logsubmit">登录</a><!--active-login-btn-->
+        <div class="login-guide">
+            <!--<a href="javascript:void(0)" onclick="cardFirstLogin();return false;" name="WAP_login_password_shop" >门店卡登录</a>-->
+            <a href="javascript:void(0)" id="goForgetPwd" name="WAP_login_password_forgetpsd">忘记密码?</a>
+        </div>
+        <a href="/suning/reg.html" class="sign-btn" id="goReg" name="WAP_login_password_reg">快速注册</a>
+    </div>
+
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/login.min.js">
+
+</script>
+</body>
+</html>

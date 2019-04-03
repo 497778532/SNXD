@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>苏宁小店</title>
+    <link rel="stylesheet" href="css/common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/searchList.css">
+    <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="sn_container">
+    <div class="search">
+        <span class="mui-icon mui-icon-search"></span>
+        <input type="search" placeholder="搜素附近的商品和门店">
+    </div>
+    <div class="result-wrap">
+        <ul class="result-sort-new sn-nav-search wbox" id="J_sortWrap">
+            <li class="wbox-flex def cur" data-order="total">综合</li>
+            <li class="wbox-flex isSales" data-order="num">销量</li>
+            <li class="wbox-flex price " data-order="price">价格<i></i></li>
+            <li class="wbox-flex J_filter" data-order="">筛选</li>
+        </ul>
+        <div class="result-hot-pro mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="productsList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="sn_footer hor-view">
+        <a href="" class="cur">
+            <img src="images/footer1.png" alt="">
+            <span class="index">首页</span>
+        </a>
+        <a href="categorize.html">
+            <img src="images/footer2.png" alt="">
+            <span>分类</span>
+        </a>
+        <a href="cart.html">
+            <img src="images/footer3.png" alt="">
+            <span>购物车</span>
+        </a>
+        <a href="">
+            <img src="images/footer4.png" alt="">
+            <span>个人中心</span>
+        </a>
+    </footer>
+</div>
+</body>
+<script type="text/html" id="productTpl">
+    <% if(model.data && model.data.length){ %>
+    <% for(var i = 0 ; i < model.data.length ; i ++){ %>
+    <% var item = model.data[i]; %>
+    <li>
+        <a href="product.html?productId=<%=item.id%>">
+            <div class="img">
+                <div class="img-occupied">
+                    <img src="<%=item.pic[0]&&item.pic[0].picAddr||'/mobile/images/none.jpg'%>" alt="">
+                </div>
+                <div class="position-right-bottom"></div>
+            </div>
+            <div class="txt">
+                <p class="name"><%=item.proName%></p>
+                <p class="info-label">
+                    <em class="i-text"> 鲜香果干</em>
+                    <em class="i-text"> 明星产品</em>
+                </p>
+                <div class="price">
+                    <p class="price-box">
+                                    <span class="price-txt">
+                                        <em class="price-num">￥<strong><%=item.price%></strong>.90
+                                        </em>
+                                    </span>
+                    </p>
+                    <p class="product-label" style="display:block"><i class="promotion-color-one">领券88-5</i>
+                    </p>
+                    <p class="shop-num">
+                        <em>19万+条评价</em>
+                        <em class="evaluate">好评率99%</em>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <% } %>
+    <%}%>
+</script>
+<script src="lib/artTemplate/template-native.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/searchList.min.js"></script>
+</html>

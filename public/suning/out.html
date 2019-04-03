@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>苏宁小店</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="css/common.min.css">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/out.min.css">
+  <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!--导航栏-->
+<div class="sn-nav">
+  <div class="sn-nav-back"><a class="" href="javascript:history.back(1)">返回</a></div>
+  <div class="sn-nav-title of">账户设置</div>
+</div>
+<a href="javascript:history.back(-1)"  class="item-btn item-head mb-20 to_preson fk-sa-click">
+  <div class="btn-content">
+    <img src="/suning/images/me.jpg">
+    <label>你的用户名</label>
+    <i></i>
+  </div>
+</a>
+<p class="item-tip">添加信息，享受专享推荐</p>
+<div class="item-baby mb-20">
+  <a  class="baby-add fk-sa-click none"  href="javascript:void(0)">
+    <i class="baby-ico"></i>
+    <div class="add-text">
+      <p>添加宝宝信息</p>
+    </div>
+  </a>
+
+  <!--尺码信息-->
+
+  <a href="javascript:;" class="baby-add fk-sa-click none">
+    <i class="add-ico"></i>
+    <div class="add-text">
+      <p>添加尺码信息</p>
+    </div>
+  </a>
+
+</div>
+<a href="javascript:void(0)" class="item-btn to_qrcode fk-sa-click none">
+  <div class="btn-content ">
+    <label>会员码</label>
+    <div class="qrcode-ico"></div>
+    <i></i>
+  </div>
+</a>
+<a  href="address.html" class="item-btn mb-20 fk-sa-click">
+  <div class="btn-content" style="border: none;">
+    <label>地址管理</label>
+    <span>新增&nbsp;/&nbsp;修改地址</span>
+    <i></i>
+  </div>
+</a>
+<a  href="updateUser.html" class="item-btn fk-sa-click">
+  <div class="btn-content">
+    <label>账户安全</label>
+    <span>修改密码&nbsp;/&nbsp;修改手机</span>
+    <i></i>
+  </div>
+</a>
+<a  href="javascript:void(0)" class="out-btn logout fk-sa-click" id="logout">退出登录</a>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/mui/js/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+   $('#logout').on('tap',function () {
+       sn.loginAjax({
+           type:'get',
+           url:'/api/user/logout',
+           dataType:'json',
+           data:'',
+           success:function (data) {
+               history.back(-1)
+           }
+       })
+   });
+   $('.none').on('tap',function () {
+       mui.toast('抱歉,还未有此接口')
+   })
+</script>
+</body>
+</html>
