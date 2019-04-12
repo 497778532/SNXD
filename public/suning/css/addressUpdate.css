@@ -10,7 +10,7 @@
 }
 .wbox {
     display: -webkit-flex!important;
-    display: -webkit-box;
+    display: -webkit-box
 }
 .wbox-flex {
     -webkit-flex: 1!important;

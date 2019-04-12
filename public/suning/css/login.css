@@ -14,7 +14,7 @@ body, html {
     display: block;
     width: 100%;
     border-bottom: 1px solid #ddd;
-    height: 2rem;
+    height: 2rem
 }
 
 .login-title li {

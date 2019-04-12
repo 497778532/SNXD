@@ -84,10 +84,10 @@ html,body{
     right: .88rem;
     top: .52rem;
     display: block;
-    width: 10px;
-    height: 18px;
-    background: url("/suning/images/icon.png") 0 3px no-repeat;;
-    background-size: 60px;
+    width: .469rem;
+    height: .843rem;
+    background: url("../images/icon.png") 0 3px no-repeat;;
+    background-size: 2.813rem;
 }
 .result-sort-new li i.top{
     background-position: -25px 3px;
@@ -112,7 +112,7 @@ html,body{
     background: #FFF;
     overflow: hidden;
     margin-bottom: 1px;
-    position: relative;
+    position: relative
 }
 .result-hot-pro ul li .img {
     position: relative;
@@ -125,7 +125,7 @@ html,body{
 .result-hot-pro ul li .img .img-occupied {
     width: 4rem;
     height: 4rem;
-    background: url(/suning/images/ljz.png) center center no-repeat;
+    background: url(../images/ljz.png) center center no-repeat;
     background-size: 90%;
 }
 .result-hot-pro ul li .img .img-occupied img {
@@ -211,7 +211,7 @@ html,body{
 .result-hot-pro ul li .txt .price .price-txt .price-num {
     vertical-align: baseline;
     float: left;
-    margin-right: 8px;
+    margin-right:.375rem;
 }
 .result-hot-pro ul li .txt .price .price-txt strong {
     font-size: .68rem;

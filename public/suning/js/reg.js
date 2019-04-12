@@ -33,7 +33,7 @@ $(function () {
             return;
         }
         if (window.mobile !== dataObj.mobile) {
-            mui.toast("验证码错误");
+            mui.toast("验证码错误")
             return;
         }
 
@@ -49,7 +49,7 @@ $(function () {
                         location.href = returnUrl;
                     }
                     else {
-                        location.href = '/suning/index.html';
+                        location.href = 'index.html';
                     }
                 } else {
                     mui.toast(data.message);

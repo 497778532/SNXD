@@ -13,7 +13,7 @@ $(function () {
         indicators: true, //是否显示滚动条
     });
     $('.search').on('tap', function () {
-        location.href = '/suning/search.html'
+        location.href = 'search.html';
     })
     getFirstCate(function (data) {
         $('.left ul').html(template('firstTemplate', data));

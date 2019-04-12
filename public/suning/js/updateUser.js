@@ -4,7 +4,7 @@ $(function () {
         success: function (data) {
             var mobile=sn.getTel(data.mobile);
             $('.black1').html(mobile);
-            sn.vCode($('#getcode'),mobile)
+            sn.vCode($('#getcode'),mobile);
         }
     })
 

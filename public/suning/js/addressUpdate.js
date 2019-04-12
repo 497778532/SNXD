@@ -7,7 +7,7 @@ $(function () {
         $('#addr-tel').val(obj.mobile)
         $('#addr-address').val(obj.address)
         $('#addr-detail').val(obj.addressDetail)
-        $('#addr-postCode').val(obj.postCode)
+        $('#addr-postCode').val(obj.postCode);
 
     })
     $('.sn-btn').on('tap',function () {

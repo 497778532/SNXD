@@ -5,7 +5,6 @@ $(function () {
         threshold: 180,
     });
     sn.getCartData(function (data) {
-        console.log(data)
         window.data = data.data;
         $('.content').html(template('cartTemplate', data));
         getNum()

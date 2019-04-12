@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<style>
+  a{
+    display: block;
+  }
+  .content{
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+
+  }
+  .haha{
+    height: 100px;
+    width:100px;
+    flex: 1 1 auto;
+    background-color:yellow;
+  }
+  span{
+    height: 100px;
+    display: block;
+    flex: 1 1 auto;
+    width:200px;
+
+  }
+h1{
+  height: 100px;
+  flex: 1;
+  background-color:purple;
+}
+i{
+  height: 100px;
+  display: block;
+  flex: 1;
+  background-color: blue
+}
+</style>
+<body>
+<a href="woshinibaba.itemdo?id=1" id="btn">
+  <div class="content">
+    <div class="haha">哈哈哈哈哈哈哈</div>
+    <span>2</span>
+    <h1>好</h1>
+    <i>我是i</i>
+  </div>
+</a>
+<script>
+ var a=document.getElementById('btn')
+  a.onclick=function () {
+      return false
+  }
+
+</script>
+</body>
+</html>

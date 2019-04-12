@@ -8,7 +8,7 @@ var getUserData = function (callback) {
             callback && callback(data)
         },
         error:function () {
-            mui.toast('查询个人信息失败')
+            mui.toast('查询个人信息失败');
         }
     })
 };

@@ -1,6 +1,6 @@
 $(function () {
     getAddress(function (data) {
-        $('.address-list').html(template('addressTemplate',{list:data}))
+        $('.address-list').html(template('addressTemplate',{list:data}));
     })
 })
 var getAddress=function (callback) {

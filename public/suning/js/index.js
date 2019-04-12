@@ -1,10 +1,16 @@
 $(function () {
+    var flag=window.sessionStorage.getItem('user');
+    if(flag){
+        $('.login').text('').attr('href','me.html').append('<i></i>')
+    }else {
+        $('.login').text('登录').attr('href','login.html')
+    }
     var gallery = mui('.mui-slider');
     gallery.slider({
         interval: 1000//自动轮播周期，若为0则不自动播放，默认为0；
     });
     $('.sn_topSearch a').on('tap',function () {
-        location.href='/suning/search.html'
+        location.href='search.html'
     })
     $("img").lazyload({
         placeholder : "images/loading.gif",
@@ -16,7 +22,7 @@ $(function () {
 });
 var banner = function () {
 
-    var banner = document.querySelector('.list-wrapper');
+    var banner = document.querySelector('.list-wrapper')
 
     /*屏幕宽度*/
     var height = 2.04;

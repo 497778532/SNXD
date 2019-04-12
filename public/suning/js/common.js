@@ -27,7 +27,7 @@ sn.loginAjax = function (options) {
             if (data.error == 400) {
                 mui.toast('未登录，请登录');
                 setTimeout(function () {
-                    location.href = '/suning/login.html?returnUrl=' + location.href;
+                    location.href = 'login.html?returnUrl=' + location.href;
                 }, 1000)
 
             } else {

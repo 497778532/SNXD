@@ -19,7 +19,7 @@ $(function () {
         /*判断是否输入了内容*/
         if (!key) {
             mui.toast('请输入关键字');
-            return false;
+            return false
         }
         /*获取需要排序的方式*/
         var type = $('[data-order].cur').attr('data-order');

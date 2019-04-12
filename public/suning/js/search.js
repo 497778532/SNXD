@@ -13,8 +13,8 @@ $(function () {
                 return false;
             }
             addSearchData(key);
-            location.href = '/suning/searchList.html?key='+key;
-            return false;
+            location.href = 'searchList.html?key='+key;
+            return false
         }
     });
     $('.icon').on('tap',function () {

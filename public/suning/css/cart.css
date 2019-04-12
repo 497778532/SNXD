@@ -14,7 +14,7 @@
 }
 .sn-nav-left{
     width: 20%;
-    padding-left:0.3rem;
+    padding-left:0.3rem
 }
 .sn_cart_header .title{
     width: 60%;
@@ -70,12 +70,12 @@
 
 }
 .cartTop .rightLi{
-    padding-left: 10px;
+    padding-left:.703rem;
     line-height: 1.5rem;
     border-bottom: 1px solid #f0f0f0;;
 }
 .cartTop .rightLi span{
-    margin-left: 10px;
+    margin-left: .844rem;
 }
 .cartTop  img {
     width: 1rem;
@@ -92,7 +92,7 @@
     height: 3rem;
 }
 .cartBody ul .product {
-    padding-left: 5px;
+    padding-left: .234rem;
     position: relative;
     border-bottom: 1px solid #f0f0f0;;
 }
@@ -106,7 +106,7 @@
 }
 .cartBody ul .product .product_text{
     margin-left: .3rem;
-    font-size: 12px;
+    font-size: .56rem;
 }
 .cartBody ul .product .product_text .tellYou{
     height: 1.5rem;
@@ -120,11 +120,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -14px;
-    margin-top: -13px;
+    margin-left: -.655rem;
+    margin-top: -.61rem;
     display: inline-block;
-    width: 28px;
-    height: 26px;
+    width: 1.31rem;
+    height: 1.22rem;
     border: 0;
     outline: 0!important;
     background-color: transparent;
@@ -135,7 +135,7 @@
 }
 .add{
 position: absolute;
-bottom: 3px;
+bottom: .14rem;
 right: .3rem;
 }
 .add a{
@@ -149,7 +149,7 @@ color: #f3f3f3;
     line-height: .7rem;
 font-size:.937rem;
 font-weight: 700;
-    margin-right: 5px;
+    margin-right: .234rem;
 }
 .add a:nth-child(2){
 background-color:#fff;
@@ -176,20 +176,20 @@ font-size:.4rem;
     padding-left:.8rem ;
 }
 .total li:nth-child(2){
-    padding-left:20px;
+    padding-left:.938rem;
     font-size:.4rem;
     color: #FF9900;
 
 }
 .total li:nth-child(3){
-    padding-left:25px;
-    letter-spacing:4px;
+    padding-left:1.172rem;
+    letter-spacing:.188rem;
 }
 .total li:nth-child(3) span{
     background-color: #FF9900;
     border-radius: 6px;
     color: #fff;
-    padding:7px;
+    padding:.328rem;
     font-family: Muiicons;
 }
 .content  .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {

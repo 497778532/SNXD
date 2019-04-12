@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/common.min.css">
   <link rel="stylesheet" href="css/reset.min.css">
   <link rel="stylesheet" href="css/out.min.css">
-  <link rel="shortcut icon" href="/suning/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
 <body>
@@ -20,30 +20,12 @@
 </div>
 <a href="javascript:history.back(-1)"  class="item-btn item-head mb-20 to_preson fk-sa-click">
   <div class="btn-content">
-    <img src="/suning/images/me.jpg">
-    <label>你的用户名</label>
+    <img src="images/me.jpg">
     <i></i>
   </div>
 </a>
 <p class="item-tip">添加信息，享受专享推荐</p>
-<div class="item-baby mb-20">
-  <a  class="baby-add fk-sa-click none"  href="javascript:void(0)">
-    <i class="baby-ico"></i>
-    <div class="add-text">
-      <p>添加宝宝信息</p>
-    </div>
-  </a>
 
-  <!--尺码信息-->
-
-  <a href="javascript:;" class="baby-add fk-sa-click none">
-    <i class="add-ico"></i>
-    <div class="add-text">
-      <p>添加尺码信息</p>
-    </div>
-  </a>
-
-</div>
 <a href="javascript:void(0)" class="item-btn to_qrcode fk-sa-click none">
   <div class="btn-content ">
     <label>会员码</label>
@@ -78,7 +60,11 @@
            dataType:'json',
            data:'',
            success:function (data) {
-               history.back(-1)
+               if(data.success){
+                   mui.toast('退出成功');
+                   window.sessionStorage.removeItem('user');
+                   location.href='index.html';
+               }
            }
        })
    });

@@ -8,7 +8,7 @@ $(function () {
             return;
         }
         if (password.length == 0) {
-            mui.toast("密码不能为空");
+            mui.toast("密码不能为空")
             return;
         }
         $.ajax({
@@ -24,8 +24,9 @@ $(function () {
                     }
                     /*2.首页*/
                     else {
-                        location.href = '/suning/index.html';
+                        location.href = 'index.html';
                     }
+                    window.sessionStorage.setItem('user','true');
                 } else {
                    mui.toast('账号密码错误')
                 }
